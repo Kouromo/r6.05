@@ -1,0 +1,21 @@
+anglo-français (code fichier et classe)-> into anglais
+
+procédures avec minuscule en 1er caractère
+
+variable vitesseActuelle inutilisée
+
+demarrerVoiture dans Conducteur
+
+incohérence estAdulte
+
+Espaces en trop et manques d'espaces à certains endroits
+
+Créer des constantes
+
+Nombres magiques
+
+Pas de javadoc
+
+Given, when, then
+
+Extraire les prints en une méthode

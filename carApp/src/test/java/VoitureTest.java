@@ -23,10 +23,4 @@ public class VoitureTest {
         voiture.ralentir();
         assertThat(voiture.getVitesse()).isEqualTo(0);
     }
-
-    @Test
-    public void testAfficherDetails() {
-        // How to assert the output using AssertJ for console output?
-        // Note: Testing console output is often more complex and depends on additional libraries.
-    }
 }
