@@ -1,6 +1,8 @@
 public class Car {
     public static final int SPEED_INCREMENT = 10;
     public static final int MAX_SPEED = 120;
+    public static final int SPEED_UNIT = 10;
+    public static final int STARTED = 0;
     private String model;
     private String color;
     private int speed;
@@ -28,8 +30,8 @@ public class Car {
     }
 
     public void slowing() {
-        if (speed - 10 >= 0) {
-            speed -= 10;
+        if (speed - SPEED_UNIT >= STARTED) {
+            speed -= SPEED_UNIT;
             // afficher détails
             System.out.println("Modèle : " + model);
             System.out.println("Couleur : " + color);
@@ -53,7 +55,6 @@ public class Car {
 
     public void changeSpeed(int newSpeed, Driver driver) {
         System.out.println(driver.getName() + " change la vitesse de la voiture à " + newSpeed);
-        int currentSpeed;
         if (getSpeed() >= newSpeed) {
             while (getSpeed() > newSpeed) {
                 slowing();
