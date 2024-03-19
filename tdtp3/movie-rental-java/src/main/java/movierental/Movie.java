@@ -1,29 +1,35 @@
 package movierental;
-import MoviePriceCode;
 
 public class Movie {
 
     public static final int CHILDRENS = 2;
-    public static final int NEW_RELEASE = 1;
 
     private String title;
-    private MoviePriceCode priceCode;
+    private int priceCode;
+    private MoviePriceCode moviePriceCode;
+
+    public Movie(String title, int priceCode) {
+        this.title = title;
+        this.priceCode = priceCode;
+    }
 
     public Movie(String title, MoviePriceCode moviePriceCode) {
         this.title = title;
-        this.priceCode = moviePriceCode;
+        this.moviePriceCode = moviePriceCode;
     }
 
     public int getPriceCode() {
         return priceCode;
     }
 
-    public void setPriceCode(int arg) {
+    public void setMoviePriceCode(int arg) {
         priceCode = arg;
     }
     public String getTitle() {
         return title;
     }
 
-
+    public MoviePriceCode getMoviePriceCode() {
+        return this.moviePriceCode;
+    }
 }
