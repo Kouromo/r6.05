@@ -1,0 +1,12 @@
+La classe Panier n'est jamais utilisée
+
+Le Main est vide.
+
+import inutil de java.util.ArrayList;
+
+Patron observateur
+
+Noms pas en français
+
+Classe Internet --> Déclencher commande
+Déclenchement de la commande dans la classe panier
